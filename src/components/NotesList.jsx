@@ -1,7 +1,8 @@
 import React from 'react'
 import Note from './Note'
-
-const NotesList = ({ notes }) => {
+import AddNote
+ from './AddNote'
+const NotesList = ({ notes, handleAddNote }) => {
   return (
     <div className='notes-list'>
       {notes.map((note) => (
@@ -11,6 +12,7 @@ const NotesList = ({ notes }) => {
 					date={note.date}
 				/>
 			))}
+			<AddNote handleAddNote={handleAddNote}/>
     </div>
   )
 }

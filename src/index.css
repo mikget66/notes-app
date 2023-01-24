@@ -39,3 +39,27 @@ code {
 }
 
 
+.note.new{
+  background: #67d7cc;
+}
+
+textarea{
+  border: none;
+  resize: none;
+  background: #67d7cc;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.save{
+  background: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+.save:hover{
+  background: #ededed;
+  cursor: pointer;
+}
